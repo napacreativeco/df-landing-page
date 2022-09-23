@@ -130,6 +130,7 @@ center.out-of-order {
 #lower li.tour-date {
   padding: 1px;
   font-size: 0.8rem;
+  white-space: nowrap;
 }
 #lower span.number {
   margin-right: 16px;
