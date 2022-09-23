@@ -169,6 +169,7 @@ ul.social-list svg {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 10px;
+    grid-gap: 0px;
   }
   #lower .row .cell {
     padding: 40px 10px;
