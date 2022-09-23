@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --yellow: #d8f880;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Special Elite', cursive;
+}
+main {
+  height: auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Styles */
+.highlighted {
+  position: relative;
+  z-index: 1;
+  margin: 12px;
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
+}
+.highlighted::before {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  bottom: -3px;
+  left: -6px;
+  z-index: -1;
+  content: '';
+  background-color: var(--yellow);
+  display: inline;
+}
+
+/* Hero */
+#hero {
+  height: 100vh;
+  width: 100vw;
+  background: url('./assets/BANNER.jpg');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* Lower */
+#lower {
+  padding: 40px 10px 10px 10px;
+  background: url('./assets/GRID.png');
+  background-size: cover;
+  background-position: center bottom;
+}
+#lower .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 14px;
+  padding: 0 40px;
+}
+center.out-of-order {
+  margin: 0 0 80px 0;
+}
+
+/* ---- Left */
+#lower {
+  height: auto;
+}
+#lower .logo {
+  position: relative;
+  z-index: 1;
+  margin: 12px;
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
+}
+#lower .logo img {
+  width: 100%;
+}
+#lower .logo::before {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  bottom: 40%;
+  left: -6px;
+  z-index: -1;
+  content: '';
+  background-color: var(--yellow);
+  display: inline;
+}
+
+.cell.first p {
+  margin: 22px 0;
+}
+
+/* ---- Center */
+#lower .second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---- Right */
+#lower .third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---- Dates */
+#lower .month {
+  display: flex;
+  align-self: flex-start;
+  margin: 0 0 6px 0;
+}
+#lower ul.tour-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+#lower li.tour-date {
+  padding: 1px;
+  font-size: 0.8rem;
+}
+#lower span.number {
+  margin-right: 16px;
+}
+
+
+/* ---- Social */
+#social {
+  display: flex;
+  justify-content: center;
+}
+ul.social-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+ul.social-list svg {
+  width: 20px;
+}
+
+/* ---- Seated */
+#seated {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.8);
+}
+
+/* ================
+   MEDIA QUERIES
+   ================
+*/
+@media (max-width: 768px) {
+  #lower .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  #lower .row .cell {
+    padding: 40px 10px;
+  }
+  #social {
+    padding-bottom: 60px;
+  }
+}
