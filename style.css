@@ -49,7 +49,7 @@ a {
 #hero {
   height: 100vh;
   width: 100vw;
-  background: url('./assets/BANNER.jpg');
+  background: url('./assets/BANNER-sm.jpg');
   background-size: cover;
   background-position: center bottom;
 }
@@ -57,7 +57,7 @@ a {
 /* Lower */
 #lower {
   padding: 40px 10px 10px 10px;
-  background: url('./assets/GRID.png');
+  background: url('./assets/GRID-sm.png');
   background-size: cover;
   background-position: center bottom;
 }
