@@ -100,6 +100,11 @@ center.out-of-order {
   margin: 22px 0;
 }
 
+#lower .row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* ---- Center */
 #lower .second {
   display: flex;
@@ -125,6 +130,7 @@ center.out-of-order {
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
+  width: 100%;
 }
 #lower li.tour-date {
   display: grid;
@@ -134,7 +140,7 @@ center.out-of-order {
   white-space: nowrap;
 }
 #lower span.month {
-  width: 110%;
+  width: 100%;
 }
 #lower span.number {
   margin-right: 16px;
