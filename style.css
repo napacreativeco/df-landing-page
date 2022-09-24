@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --yellow: #d8f880;
+  --yellow: #f6ff7e;
 }
 body {
   margin: 0;
@@ -29,16 +29,15 @@ a {
 .highlighted {
   position: relative;
   z-index: 1;
-  margin: 12px;
   mix-blend-mode: multiply;
   background-blend-mode: multiply;
 }
 .highlighted::before {
   position: absolute;
-  top: -8px;
-  right: -6px;
+  top: -6px;
+  right: -3px;
   bottom: -3px;
-  left: -6px;
+  left: -3px;
   z-index: -1;
   content: '';
   background-color: var(--yellow);
@@ -63,7 +62,7 @@ a {
 }
 #lower .row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 4fr 3fr 3fr;
   grid-gap: 14px;
   padding: 0 40px;
 }
@@ -83,12 +82,12 @@ center.out-of-order {
   background-blend-mode: multiply;
 }
 #lower .logo img {
-  width: 100%;
+  width: 90%;
 }
 #lower .logo::before {
   position: absolute;
   top: -8px;
-  right: -6px;
+  right: 8%;
   bottom: 40%;
   left: -6px;
   z-index: -1;
@@ -118,29 +117,41 @@ center.out-of-order {
 /* ---- Dates */
 #lower .month {
   display: flex;
-  align-self: flex-start;
   margin: 0 0 6px 0;
 }
 #lower ul.tour-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
   text-align: left;
 }
 #lower li.tour-date {
+  display: grid;
+  grid-template-columns: auto 2fr;
   padding: 1px;
   font-size: 0.8rem;
   white-space: nowrap;
 }
+#lower span.month {
+  width: 110%;
+}
 #lower span.number {
   margin-right: 16px;
+  text-align: right;
+  padding: 0 0 0 10px;
+  min-width: 30px;
 }
-
+#lower li.tour-date p {
+  margin: 0;
+  padding: 0;
+}
 
 /* ---- Social */
 #social {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 ul.social-list {
   display: flex;
