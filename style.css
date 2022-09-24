@@ -99,6 +99,13 @@ center.out-of-order {
 .cell.first p {
   margin: 22px 0;
 }
+.cell.second .tour-list {
+  margin-left: 30%;
+}
+.cell.third .month {
+  margin-left: -5%;
+}
+
 
 #lower .row {
   max-width: 1200px;
@@ -191,6 +198,17 @@ ul.social-list svg {
   #lower .row .cell {
     padding: 40px 10px;
   }
+  .cell.first p {
+    margin: 0;
+  }
+
+  .cell.second .tour-list {
+    margin-left: 30%;
+  }
+  .cell.third .month {
+    margin-left: 0;
+  }
+  
   #social {
     padding-bottom: 60px;
   }
