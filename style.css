@@ -164,6 +164,7 @@ center.out-of-order {
 #social {
   display: flex;
   justify-content: center;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 ul.social-list {
