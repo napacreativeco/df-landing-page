@@ -70,10 +70,12 @@ center.out-of-order {
   margin: 0 0 80px 0;
 }
 
-/* ---- Left */
+
 #lower {
   height: auto;
 }
+
+/* ---- First*/
 #lower .logo {
   position: relative;
   z-index: 1;
@@ -95,16 +97,12 @@ center.out-of-order {
   background-color: var(--yellow);
   display: inline;
 }
-
 .cell.first p {
   margin: 22px 0;
 }
-.cell.second .tour-list {
-  margin-left: 30%;
-}
-.cell.third .month {
-  margin-left: -8%;
-}
+
+
+
 
 
 #lower .row {
@@ -112,18 +110,25 @@ center.out-of-order {
   margin: 0 auto;
 }
 
-/* ---- Center */
+/* ---- Second */
 #lower .second {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.cell.second .tour-list {
+  padding-left: 50px;
+}
 
-/* ---- Right */
+/* ---- Third */
+
 #lower .third {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+}
+.cell.third .tour-list {
+  padding-left: 50px;
 }
 
 /* ---- Dates */
@@ -171,10 +176,10 @@ ul.social-list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 ul.social-list svg {
-  width: 20px;
+  width: 26px;
 }
 
 /* ---- Seated */
@@ -200,18 +205,25 @@ ul.social-list svg {
     padding: 40px 10px;
   }
   .cell.first p {
-    margin: 0;
+    margin: 0 0 40px 0;
   }
 
   .cell.second .tour-list {
-    margin-left: 30%;
+    padding-left: 60px;
   }
-  .cell.third .month {
-    margin-left: 0;
+  .cell.third .tour-list {
+    padding-left: 60px;
   }
   
   #social {
     padding-bottom: 60px;
+    width: 100%;
+  }
+  ul.social-list {
+    gap: 14px;
+  }
+  ul.social-list svg {
+    width: 50px;
   }
   #seated {
     width: 95%;
