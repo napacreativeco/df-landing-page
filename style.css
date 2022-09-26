@@ -161,7 +161,7 @@ center.out-of-order {
   padding: 0 0 0 10px;
   min-width: 30px;
 }
-#lower li.tour-date p {
+#lower li.tour-date a {
   margin: 0;
   padding: 0;
 }
