@@ -80,7 +80,7 @@ center.out-of-order {
 #lower .logo {
   position: relative;
   z-index: 1;
-  margin: 12px;
+  margin: 12px 0 12px -8px;
   mix-blend-mode: multiply;
   background-blend-mode: multiply;
 }
